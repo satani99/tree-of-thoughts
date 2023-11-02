@@ -33,7 +33,8 @@ class OpenAILanguageModel(AbstractLanguageModel):
             self.api_model = "text-davinci-003"
         print(f'Using api_model {self.api_model}')
 
-        self.use_chat_api = 'gpt' in self.api_model
+        # self.use_chat_api = 'gpt' in self.api_model
+        self.use_chat_api = True
 
         # reference : https://www.promptingguide.ai/techniques/react
         self.ReAct_prompt = ''
